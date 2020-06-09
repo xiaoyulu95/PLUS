@@ -58,10 +58,16 @@ X is input data matrix each row is a sample and each column is a variable.
 Label=PLUS::example_data$Label.obs
 ```
 
-Observation label for each sample. In cancer metastasis prediction, 1 means true metastasis, 0 means unlabeled samples
+Observation label for each sample. In cancer metastasis prediction, 1 means true metastasis, 0 means unlabeled samples.
 
 ```
 Prediction=PLUS(train_data=X,Label.obs=Label,Sample_use_time=30,l.rate=1,qq=0.1)
+```
+
+`Prediction$pred.y` is a vector contians the probability for each patient to be predicted as metastasis. You can either directly use the probability or use `Prediction$cutoff` as a cutoff to classify probabilities into binary Label. Selected genes in prediction can be achieved using `Prediction$pred.coef1`.
+
+```
+pred_Label=ifelse(Prediction$pred.y<Prediction$cutoff,0,1)
 ```
 
 <!--![image](https://github.com/xiaoyulu95/PLUS/blob/master/fig/density.png)-->
