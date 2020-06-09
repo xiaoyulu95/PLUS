@@ -24,7 +24,7 @@ simul_data=PU_data_simulation(p=100,N=200,confident_rate=0.5,scenario='noisy_bal
 
 * `scenario`: Have four options `noisy_balance` `clear_balanced` `clear_unbalanced` `noisy_unbalanced` represent four different scenarios
 
-* `valid`: `valid='01'` means positive samples are from the right distribution, `valid='10'` means positive samples are from the left distribution
+* `valid`: `valid='01'` means positive samples are from the right distribution peak, `valid='10'` means positive samples are from the left distribution peak 
 
 ## Value
 Result list contains three elements: `train_data` takes the N by p simulated data matrix; `Label.obs` is the PU label for each sample under choosen confident_rate; `Label.true` takes true label from the data distribution . 
