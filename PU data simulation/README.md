@@ -7,7 +7,6 @@ The function looks similar, but their non-linear properties are distinguished. H
 ![image](https://github.com/xiaoyulu95/PLUS/blob/master/fig/data_simulation.png)
 
 
-
 ## Usage
 ```
 simul_data=PU_data_simulation(p=100,N=200,confident_rate=0.5,scenario='noisy_balance',valid='01')
