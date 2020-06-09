@@ -53,7 +53,7 @@ Prediction=PLUS(train_data=X,Label.obs=Label,Sample_use_time=30,l.rate=1,qq=0.1)
 <!--![image](https://github.com/xiaoyulu95/PLUS/blob/master/fig/density.png)-->
 
 
-<img src="https://github.com/xiaoyulu95/PLUS/blob/master/fig/density.png" width="500"  height="500">
+<center><img src="https://github.com/xiaoyulu95/PLUS/blob/master/fig/density.png" width="500"  height="500"></center>
 
 
 Density plot for predicted probabilities using simulation data and corresponding cutoff.
