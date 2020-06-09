@@ -49,6 +49,7 @@ library(glmnet)
 ```
 X=PLUS::example_data$train_data
 ```
+
 X is input data matrix each row is a sample and each column is a variable. 
 
 <div align=center> <img src="https://github.com/xiaoyulu95/PLUS/blob/master/fig/example_data.png" width="700"  height="100"> </div>
@@ -56,6 +57,7 @@ X is input data matrix each row is a sample and each column is a variable.
 ```
 Label=PLUS::example_data$Label.obs
 ```
+
 Observation label for each sample. In cancer metastasis prediction, 1 means true metastasis, 0 means unlabeled samples
 
 ```
