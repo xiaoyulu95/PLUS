@@ -54,11 +54,15 @@ X is input data matrix each row is a sample and each column is a variable.
 
 <div align=center> <img src="https://github.com/xiaoyulu95/PLUS/blob/master/fig/example_data.png" width="700"  height="100"> </div>
 
+
+
 ```
 Label=PLUS::example_data$Label.obs
 ```
 
 Observation label for each sample. In cancer metastasis prediction, 1 means true metastasis, 0 means unlabeled samples.
+
+
 
 ```
 Prediction=PLUS(train_data=X,Label.obs=Label,Sample_use_time=30,l.rate=1,qq=0.1)
@@ -77,6 +81,7 @@ pred_Label=ifelse(Prediction$pred.y<Prediction$cutoff,0,1)
 <div align=center> <img src="https://github.com/xiaoyulu95/PLUS/blob/master/fig/density.png" width="500"  height="500"> </div>
 
 <div align=center> Density plot for predicted probabilities and corresponding cutoff. </div>
+
 
 
 ## PU data simulation
