@@ -68,7 +68,7 @@ Observation label for each sample. In cancer metastasis prediction, 1 means true
 Prediction=PLUS(train_data=X,Label.obs=Label,Sample_use_time=30,l.rate=1,qq=0.1)
 ```
 
-`Prediction$pred.y` is a vector contians the probability for each patient to be predicted as metastasis. You can either directly use the probability or use `Prediction$cutoff` as a cutoff to classify probabilities into binary Label. `pred_Label` is the final label for patient metastasis prediction. Selected genes in prediction can be achieved using `Prediction$pred.coef1`.
+`Prediction$pred.y` is a vector which contians the probability for each patient to be predicted as metastasis. You can either directly use the probability or use `Prediction$cutoff` as a cutoff to classify probabilities into binary Label. `pred_Label` is the final label for patient metastasis prediction. Selected genes in prediction can be achieved using `Prediction$pred.coef1`.
 
 ```
 pred_Label=ifelse(Prediction$pred.y<Prediction$cutoff,0,1)
