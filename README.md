@@ -88,7 +88,7 @@ pred_Label=ifelse(Prediction$pred.y<Prediction$cutoff,0,1)
 PLUS package also provide the capability to simulate positive unlabeled data in different setting. Detail: (https://github.com/xiaoyulu95/PLUS/tree/master/PU%20data%20simulation)
 
 ## Validation on Single Cell RNA-seq 
-Data and code for single cell RNA-seq analysis are available in: (https://github.com/xiaoyulu95/PLUS/tree/master/SC%20data)
+Data and code for single cell RNA-seq analysis are available in: https://github.com/xiaoyulu95/PLUS/tree/master/SC%20data
 
 
 ## Contact Information
