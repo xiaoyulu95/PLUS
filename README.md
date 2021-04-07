@@ -9,14 +9,13 @@
 
 ## Installation
 
+Download **PLUS function** (https://github.com/xiaoyulu95/PLUS/blob/master/R/PLUS.R)
+
 ```
 #install dependent pkg
 
-#install.packages("glmnet")
+install.packages("glmnet")
 
-#install.packages("devtools")
-
-devtools::install_github("xiaoyulu95/PLUS",force=TRUE)
 ```
 
 ## Usage
@@ -42,12 +41,13 @@ Result list contains three elements: `pred.y` shows the probability for each sam
 ## Example
 ```
 ### The R packages involved in PLUS package
-library(PLUS)
 library(glmnet)
+
+source('PLUS.R')
 ```
 
 ```
-X=PLUS::example_data$train_data
+X=example_data$train_data
 ```
 
 X is input data matrix each row is a sample and each column is a variable. 
@@ -57,7 +57,7 @@ X is input data matrix each row is a sample and each column is a variable.
 
 
 ```
-Label=PLUS::example_data$Label.obs
+Label=example_data$Label.obs
 ```
 
 Observation label for each sample. In cancer metastasis prediction, 1 means true metastasis, 0 means unlabeled samples.
