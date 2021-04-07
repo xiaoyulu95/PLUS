@@ -44,8 +44,8 @@ We provide an [exmaple data](https://github.com/xiaoyulu95/PLUS/blob/master/data
 ```
 ### The R packages involved in PLUS package
 library(glmnet)
-
 source('PLUS.R')
+load('example_data.rdata')
 ```
 
 ```
