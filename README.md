@@ -9,7 +9,7 @@
 
 ## Installation
 
-Download **PLUS function** (https://github.com/xiaoyulu95/PLUS/blob/master/R/PLUS.R)
+Download [**PLUS function**](https://github.com/xiaoyulu95/PLUS/blob/master/R/PLUS.R)
 
 ```
 #install dependent pkg
