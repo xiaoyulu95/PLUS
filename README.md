@@ -39,6 +39,8 @@ Prediction=PLUS(train_data=X,Label.obs=Label,Sample_use_time=30,l.rate=1,qq=0.1)
 Result list contains three elements: `pred.y` shows the probability for each same to be predicted as positive; `cutoff` is the reference cutoff to transfer continues probability to binary 0/1 label; `pred.coef1` take the variable coefficient used in prediction model. 
 
 ## Example
+
+We provide an [exmaple data](https://github.com/xiaoyulu95/PLUS/blob/master/data/example_data.RData)
 ```
 ### The R packages involved in PLUS package
 library(glmnet)
